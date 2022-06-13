@@ -1,0 +1,52 @@
+<html>
+
+    <head>
+        <title>Vertebrados</title>
+    </head>
+    <body background="https://www.caracteristicas.co/wp-content/uploads/2017/02/vertebrados-e1619892940994.jpg">
+        <title></title>
+</head>
+
+<body onload="doWave(0)" style="font-family: Verdana"> 
+<p align="center"><b>
+<script language="JavaScript">
+
+//put your text here
+var theText = "VERTEBRADOS";
+
+function nextSize(i,incMethod,textLength)
+{
+if (incMethod == 1) return (72*Math.abs( Math.sin(i/(textLength/3.14))) );
+if (incMethod == 2) return (255*Math.abs( Math.cos(i/(textLength/3.14))));
+}
+
+function sizeCycle(text,method,dis)
+{
+    output = "";
+    for (i = 0; i < text.length; i++)
+    {
+        size = parseInt(nextSize(i +dis,method,text.length));
+        output += "<font style='font-size: "+ size +"pt'>" +text.substring(i,i+1)+ "</font>";
+    }
+    theDiv.innerHTML = output;
+}
+
+function doWave(n) 
+{   
+    sizeCycle(theText,1,n);
+    if (n > theText.length) {n=0}
+    setTimeout("doWave(" + (n+1) + ")", 50);
+}
+</script>
+</b></p>
+<div ID="theDiv" align="center">
+
+</div>
+        
+        <p>Los vertebrados (Vertebrata) son un subfilo muy diverso de cordados que comprende a los animales con espina dorsal o columna vertebral, compuesta de vértebras. Incluye unas 72 327 especies actuales.</p>
+
+<p>Los vertebrados han logrado adaptarse a diferentes ambientes, incluidos los más difíciles e inhóspitos. Aunque proceden inicialmente del medio dulceacuícola, una gran diversidad de formas evolucionó en el mar y más tarde, en el medio terrestre.</p>
+
+<p>El término «Vertebrata», usado en sentido amplio, es sinónimo de "Craniata", e incluye a los mixinos, que no poseen auténticas vértebras, y a las lampreas, que poseen esbozos de vértebras denominados arcualia, junto a los gnatostomados que por lo general poseen vértebras. Según los estudios genéticos, las lampreas y mixinos forman un grupo llamado Cyclostomi dentro de Vertebrata.Evidencias fósiles recientes también apoyan la inclusión de los mixinos en los vertebrados, esto sugiere que los mixinos son descendientes de vertebrados sin mandíbula que durante su evolución perdieron las vértebras.Esta agrupación exige excluir a las lampreas del clado Cephalaspidomorphi el cual incluye a los peces sin mandíbulas más emparentados con los gnatostomados.</p>
+    </body>
+</html>

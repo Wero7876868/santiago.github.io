@@ -1,0 +1,104 @@
+/** TODO in 2025: Cleanup this file **/
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap");
+html,
+body {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  font-family: "Radio Canada", sans-serif;
+}
+
+body {
+  background: black;
+  color: white;
+  overflow: hidden;
+  transition: color, background, 0.66s;
+}
+
+#app {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+#mainContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+#content {
+  display: block;
+  width: 66%;
+  text-align: left;
+}
+
+#main {
+  font-size: 6vh;
+}
+
+#sub {
+  font-size: 3vh;
+  font-style: italic;
+}
+
+#controls {
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  width: 66%;
+  justify-content: center;
+}
+
+.arrow {
+  font-size: 5vw;
+  transform: translateY(66%);
+  margin: 12px;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+#menuContainer {
+  height: 50vh;
+  width: 50vh;
+  background-color: #F9D923;
+  border-radius: 50%;
+  text-align: center;
+  transform: translateY(66%);
+}
+
+#textContainer {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.66s, color 0s;
+}
+
+.item {
+  position: absolute;
+  font-size: 4.1666666667vh;
+}
+
+#itemOne {
+  transform: translateY(-30vh);
+}
+
+#itemTwo {
+  transform: translateX(-30vh) rotate(270deg);
+}
+
+#itemThree {
+  transform: translateY(30vh) rotate(180deg);
+}
+
+#itemFour {
+  transform: translateX(30vh) rotate(90deg);
+}
